@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parshva Fashion | Women's Designer Ethnic Wear Boutique in Mumbai</title>
+  <meta name="description" content="Parshva Fashion offers elegant women's ethnic wear including kurtis, sarees, lehengas, bridal wear, and party gowns in Borivali, Mumbai. Custom stitching & bridal consultations available." />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Parshva Fashion | Women's Designer Ethnic Wear Boutique" />
+  <meta property="og:description" content="Elegant ethnic wear including kurtis, sarees, lehengas & bridal wear. Located in Borivali, Mumbai." />
+  <meta property="og:url" content="https://your-github-username.github.io/parshva-fashion/" />
+  <meta property="og:image" content="https://your-image-url/og-image.jpg" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Parshva Fashion | Women's Designer Ethnic Wear Boutique" />
+  <meta name="twitter:description" content="Elegant ethnic wear including kurtis, sarees, lehengas & bridal wear. Located in Borivali, Mumbai." />
+  <meta name="twitter:image" content="https://your-image-url/twitter-image.jpg" />
+  
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" />
+  
+  <!-- Styles -->
+  <style>
+    :root {
+      --baby-pink: #f8d7da;
+      --pink-accent: #e75480;
+      --dark-text: #333;
+      --light-text: #555;
+      --white: #fff;
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0; 
+      font-family: var(--font-family);
+      color: var(--dark-text);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--baby-pink);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img.logo {
+      height: 50px;
+      width: auto;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: var(--pink-accent);
+      margin: 0;
+    }
+    nav a {
+      color: var(--pink-accent);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+    }
+    #hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    #hero .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%);
+      color: var(--white);
+      background-color: rgba(231, 84, 128, 0.75);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      max-width: 350px;
+    }
+    #hero .hero-text h2 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+    }
+    #hero .hero-text p {
+      margin: 0 0 1rem;
+    }
+    #hero .hero-text a {
+      background-color: var(--white);
+      color: var(--pink-accent);
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+    }
+    #hero .hero-text a:hover,
+    #hero .hero-text a:focus {
+      background-color: var(--pink-accent);
+      color: var(--white);
+    }
+    section h2 {
+      color: var(--pink-accent);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover,
+    .product-card:focus-within {
+      box-shadow: 0 0 12px var(--pink-accent);
+      outline: none;
+    }
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .product-card .info {
+      padding: 1rem;
+    }
+    .product-card h3 {
+      margin-top: 0;
+      color: var(--pink-accent);
+      font-size: 1.25rem;
+    }
+    .product-card p {
+      margin-bottom: 0;
+      color: var(--light-text);
+    }
+    footer {
+      background-color: var(--baby-pink);
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--dark-text);
+    }
+    .contact-buttons {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .contact-buttons a {
+      background-color: var(--pink-accent);
+      color: var(--white);
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background-color 0.3s ease;
+    }
+    .contact-buttons a:hover,
+    .contact-buttons a:focus {
+      background-color: #c84374;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #hero .hero-text {
+        max-width: 100%;
+        left: 1rem;
+        right: 1rem;
+        padding: 1rem;
+      }
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Parshva Fashion",
+    "image": "https://your-image-url/logo.png",
+    "description": "Parshva Fashion offers elegant women's ethnic wear including kurtis, sarees, lehengas, bridal wear, and party gowns in Borivali, Mumbai.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Borivali West, Mumbai",
+      "addressLocality": "Mumbai",
+      "addressRegion": "MH",
+      "postalCode": "400092",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-9833648798",
+    "url": "https://your-github-username.github.io/parshva-fashion/",
+    "sameAs": [
+      "https://www.instagram.com/parshva_fashions/",
+      "https://g.page/parshva-fashion"
+    ],
+    "openingHours": "Mo,Tu,We,Th,Fr 10:00-20:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="https://your-image-url/logo.png" alt="Parshva Fashion Logo" class="logo" />
+    <h1>Parshva Fashion</h1>
+    <nav aria-label="Primary Navigation">
+      <a href="#products">Collections</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" aria-label="Hero Banner with Featured Ethnic Wear">
+      <img src="https://images.unsplash.com/photo-1600185364660-06c11ec5c89a?auto=format&fit=crop&w=1200&q=80" alt="Woman wearing a beautiful embroidered kurti in bright colors" />
+      <div class="hero-text">
+        <h2>Elegance in Every Thread</h2>
+        <p>Discover stunning designer kurtis, sarees, lehengas & bridal wear.</p>
+        <a href="https://wa.me/9833648798" target="_blank" rel="noopener noreferrer" aria-label="Chat with Parshva Fashion on WhatsApp">Shop Now 💬</a>
+      </div>
+    </section>
+
+    <section id="products" aria-labelledby="products-title" class="container">
+      <h2 id="products-title">Our Collections</h2>
+      <div class="products">
+        <article class="product-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1600185364660-06c11ec5c89a?auto=format&fit=crop&w=400&q=80" alt="Elegant embroidered kurti in bright colors" />
+          <div class="info">
+            <h3>Designer Kurtis</h3>
+            <p>Elegant and stylish kurtis perfect for daily wear or office.</p>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1617136449266-77dff79e6d8c?auto=format&fit=crop&w=400&q=80" alt="Traditional Indian saree in soft pastel tones" />
+          <div class="info">
+            <h3>Sarees</h3>
+            <p>Traditional and contemporary sarees to make every occasion special.</p>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1562158070-fce3e365d217?auto=format&fit=crop&w=400&q=80" alt="Red bridal lehenga with detailed embroidery" />
+          <div class="info">
+            <h3>Lehengas</h3>
+            <p>Beautiful lehengas designed for weddings and parties.</p>
+          </div>
+        </article>
+        <article class="product-card" tabindex="0">
+          <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Glamorous party gown with ethnic Indian design elements" />
+          <div class="info">
+            <h3>Partywear Gowns</h3>
+            <p>Glamorous gowns to shine at any party or event.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" aria-labelledby="services-title" class="container">
+      <h2 id="services-title">Our Services</h2>
+      <ul>
+        <li>Custom Stitching & Tailoring</li>
+        <li>Bridal Consultations & Fittings</li>
+        <li>Personalized Styling Advice</li>
+      </ul>
+    </section>
+
+    <section id="about" aria-labelledby="about-title" class="container">
+      <h2 id="about-title">About Parshva Fashion</h2>
+      <p>Parshva Fashion is a premier women's ethnic wear boutique based in Borivali, Mumbai. We specialize in designer kurtis, sarees, lehengas, bridal wear, and party gowns with custom stitching and personalized service.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title" class="container">
+      <h2 id="contact-title">Contact Us</h2>
+      <p>Phone: <a href="tel:+919833648798">+91-9833648798</a></p>
+      <p>Email: <a href="mailto:info@parshvafashion.com">info@parshvafashion.com</a></p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/9833648798" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">💬 WhatsApp</a>
+        <a href="https://www.instagram.com/parshva_fashions/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram">📸 Instagram</a>
+        <a href="https://g.page/parshva-fashion" target="_blank" rel="noopener noreferrer" aria-label="Google Business Profile">📍 Google Business Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Parshva Fashion. All rights reserved.
+  </footer>
+</body>
+</html>
